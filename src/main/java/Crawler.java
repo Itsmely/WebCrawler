@@ -3,9 +3,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.w3c.dom.EntityReference;
-
-import java.io.IOException;
 
 public class Crawler {
 
@@ -25,8 +22,6 @@ public class Crawler {
             String html = EntityUtils.toString(response.getEntity(),"UTF-8");
             System.out.println(html);
 
-
         }
-
     }
 }
